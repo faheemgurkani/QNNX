@@ -116,7 +116,7 @@ coverage.xml
 *.war
 *.nar
 *.ear
-*.zip
+# *.zip
 *.tar.gz
 *.rar
 hs_err_pid*
@@ -313,7 +313,7 @@ secrets/
 *.jar
 *.rar
 *.tar
-*.zip
+# *.zip
 
 # Project specific
 # Add any project-specific files or directories here 
