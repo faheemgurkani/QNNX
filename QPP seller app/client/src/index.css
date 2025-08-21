@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+body { @apply bg-gradient-to-b from-brand-900 via-brand-800 to-brand-700 min-h-screen; }
+
+/* Auth card glass effect */
+.card {
+  @apply bg-white/95 backdrop-blur rounded-2xl shadow-soft border border-white/40;
+}
+/* Soft glass panel for dark gradient backgrounds */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-soft;
+}
+.btn-primary {
+  @apply bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-lg px-4 py-3 transition;
+}
+.btn-outline {
+  @apply border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-lg px-4 py-3 transition;
+}
+.input {
+  @apply w-full rounded-lg border border-slate-300 bg-white p-3 outline-none focus:ring-2 focus:ring-brand-400;
+}
+.link { @apply text-brand-200 hover:text-white underline underline-offset-4; }
+/* Fade the edges of the marquee for a nice mask */
+/* Fade the edges of the marquee for a nice mask */
+.marquee-mask {
+  --mask: linear-gradient(90deg,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,1) 8%,
+    rgba(0,0,0,1) 92%,
+    rgba(0,0,0,0) 100%);
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+}
